@@ -1,0 +1,931 @@
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><link href="../../App_Themes/Blue/Blue.css" type="text/css" rel="stylesheet" /><link href="../../App_Themes/Blue/BlueDatepicker.css" type="text/css" rel="stylesheet" /><title>
+	ITI Detail
+</title><meta name="description" content="NCVT MIS" /><meta name="keywords" content="NCVT,ITI,SPIU,NPIU,DGET,MOLE,DGT,State Directorate,Trade,Seat,CTS,COE,VTIP,CFI,ATI,AITT,NCVT,CITS" /><meta name="author" content="Directorate General of Training, Ministry of Skill Development And Entrepreneurship, Government of India|DGT" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta http-equiv="X-UA-Compatible" content="IE=EDGE" /><meta http-equiv="PRAGMA" content="NO-CACHE" /><link href="/Styles/Main.css" rel="stylesheet" />
+    <!--[if lte IE 7]>
+    <link href="/Styles/IECompatFix.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <link rel="shortcut icon" href="/Images/favicon.ico" />
+    
+    <script src="/Scripts/jquery-3.5.1.min.js"></script>
+    <script src="/Scripts/Datepicker.js"></script>
+    <script src="/Scripts/Common.js"></script>
+    <script src="/Scripts/Main.js"></script>
+
+    <link href="../../Content/font-awesome.css" rel="stylesheet" />
+    <style type="text/css">
+        html, body {
+            min-width: 1200px;
+        }
+    </style>
+</head>
+<body id="pageBody" class="desktop" style="display:none;font-size:13px;">
+    <form method="post" action="./Detail.aspx?ITI=19169" id="frmMain">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['frmMain'];
+if (!theForm) {
+    theForm = document.frmMain;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=zQoiTf-a8dSjZDmxKIl0UM41B5v0EM7-DrQgBMD5yZmynAAXItYgQNGgEx03DCllzJomGJ3lqzngFeeHhOyO7_qFb541&amp;t=638568802745067788" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=mRqouWvBSKQbnXoSKkbcVsTKjIKzuzCSeMYkb_RzPncNkP_lXysUHmNh6-5UM5571hNFbai3DsxLsmrqJ7ixTzGSeoXADXnr0XOqPCJANVFRe-e2i79aruD-MdhERPQmChTi2A2&amp;t=7266186d" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=XyimCuv1hfeW9ZRALaAUsjjVgAnsWmbGeekOTz52NdmN8VhFDBNLLYlt5F-xyjj-C1UztHHLJYi-2XlBuXCryB_K_r43D9svXf9KmFZqepQKzMZw0&amp;t=ffffffffe4ec58b9" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=Nv58jh9dmoYjW3Ts9euJFKBrISLJjzrNDrwkZehcvQU0P5vnQy75XZChEXtugolkLNqQYSsMAKHp67mNSDmUjUE5LJuFwyM1hho854kpApoY5CP5DACjW5wQUpyiWQVJ9yP1bg2&amp;t=ffffffffe4ec58b9" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="30820F70" />
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="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" />
+</div>
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ctl12', 'frmMain', ['tctl00$cphBody$ctl00','cphBody_ctl00','tctl00$cphBody$ctl01','cphBody_ctl01','tctl00$contentOverlay$ctl00','contentOverlay_ctl00'], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+        <div id="upLoading" style="display:none;">
+	
+                <div id="dvAjaxBG" class="layer unselectable">
+                    <span></span>
+                </div>
+            
+</div>
+        <div id="header">
+            <table>
+                <tr>
+                    <td style="width: 50px" rowspan="2">
+                        <a href="/Pages/Home.aspx">
+                            <img src="/Images/img_logo.png" alt="NCVT MIS" style="height: 50px" /></a>
+                    </td>
+                    <td class="sitename" style="vertical-align: middle; width: 640px;" rowspan="2">Ministry of
+                        Skill Development
+                        And Entrepreneurship
+                    </td>
+                    <td style="text-align: right; vertical-align: top; padding-top: 2px; padding-right: 10px">
+                        <a id="lbtnFontSizeInc" class="linkblock" href="javascript:__doPostBack(&#39;ctl00$lbtnFontSizeInc&#39;,&#39;&#39;)">+A</a>
+                        <a id="lbtnFontSizeRst" class="linkblock" href="javascript:__doPostBack(&#39;ctl00$lbtnFontSizeRst&#39;,&#39;&#39;)">A</a>
+                        <a id="lbtnFontSizeDec" class="linkblock" href="javascript:__doPostBack(&#39;ctl00$lbtnFontSizeDec&#39;,&#39;&#39;)">-A</a>
+                        &nbsp;
+                        &nbsp;
+                        <a href="/Pages/Terms.aspx">Terms & Conditions</a> |
+                        <a href="/Pages/PrivacyPolicy.aspx">Privacy Policy</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: right; vertical-align: bottom; padding-bottom: 2px;">
+                        <ul class="sitelink" style="text-align: right">
+                            <li><span class="icon mail"></span>
+                                <a id="hlnkSupport" href="mailto:ncvtmis-msde@gov.in" target="_blank">Support</a></li>
+                            
+                            <li><span class="icon popup"></span><a href="https://login.ncvtmis.gov.in/MIS/PreLog/UserLogin.aspx" target="_blank">Login</a></li>
+                            <li><span class="icon help"></span>
+                                <a id="hlnkFAQ" href="/Material/NCVT_MIS_FAQ.pdf" target="_blank">FAQ</a>
+                            </li>
+                            <li><span class="icon help"></span>
+                                <a id="hlnkHelp" href="/Help/DGET-Public_ITI_User_Manual.pdf" target="_blank">Help</a>
+                            </li>
+                            <li><span class="icon help"></span>
+                                <a id="hlkSiteMap" href="../SiteMap.aspx">SiteMap</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+            <a href="#mnuMain_SkipLink"><img alt="Skip Navigation Links" src="/WebResource.axd?d=neKVXsLFonQdba5rR_gySzgAohlDneTZn5bz9bxLoje4QRAaD8wtK6VJmvbXy-1Z1ZI6IFMcQpDTc0usKizSy5Zc2us1&amp;t=638568802745067788" width="0" height="0" style="border-width:0px;" /></a><div class="menu" id="mnuMain">
+	<ul class="level1">
+		<li><a title="DGT Home Page" class="level1" href="/Pages/Home.aspx">Home</a></li><li><a class="popout level1" href="#" onclick="__doPostBack(&#39;ctl00$mnuMain&#39;,&#39;ITI&#39;)">ITI</a><ul class="level2">
+			<li><a title="Page to search for ITIs." class="level2" href="/Pages/ITI/Search.aspx">ITI Search</a></li><li><a title="Page to search for ITIs and provide Feedback." class="level2" href="/Pages/ITI/Search.aspx?feedback">Grading</a></li><li><a title="Page provides Tradewise count of avaiable, occupied seats and count of ITIs." class="level2" href="/Pages/ITI/TradeStats.aspx">Trade Statistics</a></li>
+		</ul></li><li><a class="popout level1" href="#" onclick="__doPostBack(&#39;ctl00$mnuMain&#39;,&#39;Trainee&#39;)">Trainee</a><ul class="level2">
+			<li><a title="Page to search for Trainees." class="level2" href="/Pages/Trainee/Search.aspx">Trainee Search</a></li><li><a title="Page allows Trainee to verify their own profile." class="level2" href="/Pages/Trainee/PreTrainee_Authentication.aspx">Trainee Verification</a></li><li><a title="Page to search for Trainees." class="level2" href="/Pages/Trainee/TraineeGrievanceAuthenticatec_BeforeHT.aspx">Trainee Verification Before HT</a></li><li><a title="Page allows Trainee to view their own profile." class="level2" href="/Pages/Trainee/MyProfile.aspx">Trainee Profile</a></li><li><a title="Page to download NAC Certificate." class="level2" href="/Pages/Trainee/NACCertificate.aspx">NAC Legacy Certificate</a></li><li><a title="Page to download COE Certificate." class="level2" href="/Pages/Trainee/COECertificate.aspx">COE Certificate Download</a></li><li><a title="Page allows Trainee to view their Flexi MoU Marksheet and Certificate." class="level2" href="/Pages/FlexiMoU/FlexiMoUMarksheetCertificate.aspx">Flexi Marksheet Certificate</a></li><li><a title="Page allows Trainee to view their Flexi MoU Semester Marksheet and Certificate." class="level2" href="/Pages/FlexiMoU/FlexiMoUMarksheetCertificateSemesterWise.aspx">Flexi Semester Marksheet Certificate</a></li><li><a title="Page to download Marksheet." class="level2" href="/Pages/Marksheet/DSTMarksheet.aspx">DST Marksheet Before 2019</a></li><li><a title="Page to download Certificate." class="level2" href="/Pages/Marksheet/DSTCertificate.aspx">DST Certificate Before 2019</a></li><li><a title="Page to download NCIC Certificate." class="level2" href="/Pages/Trainee/NCICCertificate.aspx">NCIC Legacy Certificate</a></li><li><a title="Page allows Trainee to view their NTC Certificate." class="level2" href="/Pages/Trainee/NTCCertificate.aspx">NTC Legacy Certificate</a></li>
+		</ul></li><li><a class="popout level1" href="#" onclick="__doPostBack(&#39;ctl00$mnuMain&#39;,&#39;Verification&#39;)">Verification</a><ul class="level2">
+			<li><a title="Page to validate e-Certificate." class="level2" href="/Pages/Certification/Validate.aspx">e-Certificate Verification</a></li><li><a title="Page to search certified Trainee." class="level2" href="/Pages/Certification/CertifiedTraineeSearch.aspx">Certified Trainee Search</a></li><li><a title="Page to verify Marksheet." class="level2" href="/Pages/Marksheet/Validate.aspx">Marksheet Verification</a></li>
+		</ul></li><li><a class="popout level1" href="#" onclick="__doPostBack(&#39;ctl00$mnuMain&#39;,&#39;Instructor&#39;)">Instructor</a><ul class="level2">
+			<li><a title="Page to search for Instructors." class="level2" href="/Pages/Instructor/Search.aspx">Instructor Search</a></li>
+		</ul></li><li><a class="popout level1" href="#" onclick="__doPostBack(&#39;ctl00$mnuMain&#39;,&#39;Examiner&#39;)">Examiner</a><ul class="level2">
+			<li><a title="Page for Examiner&#39;s Registration." class="level2" href="/Pages/Examiner/ExaminerApplicationForm.aspx">Examiner Registration</a></li><li><a title="Page to activate Examiner and approve/reject Mapping." class="level2" href="/Pages/Examiner/Validate.aspx">Examiner Activation</a></li><li><a title="Page for Examiner&#39;s Login." class="level2" href="/Pages/Examiner/ExaminerLogin.aspx">Examiner Login</a></li>
+		</ul></li><li><a class="popout level1" href="#" onclick="__doPostBack(&#39;ctl00$mnuMain&#39;,&#39;Calendar&#39;)">Calendar</a><ul class="level2">
+			<li><a title="Page provides activities with deadline of Academic Calender." class="level2" href="/Pages/Calendar/Academic.aspx">Academic Calendar</a></li><li><a title="Page provides examination schedule for different semesters and Academic Calender." class="level2" href="/Pages/Calendar/Exam.aspx">Examination Calendar</a></li>
+		</ul></li><li><a title="CFI Home" class="level1" href="/Pages/CFI/Home.aspx">CFI</a></li><li><a title="Help" class="popout level1" href="#" onclick="__doPostBack(&#39;ctl00$mnuMain&#39;,&#39;Help&#39;)">Help</a><ul class="level2">
+			<li><a title="User Manual" class="popout level2" href="#" onclick="__doPostBack(&#39;ctl00$mnuMain&#39;,&#39;Help\\User Manual&#39;)">User Manual</a><ul class="level3">
+				<li><a title="Trainee Upload" class="level3" href="/MISFiles/UserManuals/DGET_NCVTMIS_Trainee_Upload_UserManual(MIS-SPIU)_June2020.docx">Trainee Upload</a></li><li><a title="ITI Dashboard" class="level3" href="/MISFiles/UserManuals/DGET_NCVTMIS_ITI_Dashboard_UserManual_Apr2020_V1.0.docx">ITI Dashboard</a></li><li><a title="Trainee Verification" class="level3" href="/MISFiles/UserManuals/DGET_NCVTMIS_ITI_Trainee_Verification_User%20Manual_Dec2019_V1.0.docx">Trainee Verification</a></li><li><a title="Trainee Discharge" class="level3" href="/MISFiles/UserManuals/DGET_NCVTMIS_SPIU_Trainee_Discharge_User%20Manual_MAR2020_V1.1.docx">Trainee Discharge</a></li><li><a title="Forget Password" class="level3" href="/MISFiles/UserManuals/USER_MANUAL_FORGOT_PASSWORD.docx">Forget Password</a></li><li><a title="Instructor" class="level3" href="/MISFiles/UserManuals/DGT_Instructor(MIS)_UserManual_June2020.docx">Instructor</a></li><li><a title="MIS-Nodal Marks Create" class="level3" href="/MISFiles/UserManuals/DGET_NCVT_ITI(MIS-Nodal%20Marks%20Create)_UserManual_Jan2021.docx">MIS-Nodal Marks Create</a></li><li><a title="MIS-Nodal Marks Edit" class="level3" href="/MISFiles/UserManuals/DGET_NCVT_ITI(MIS-Nodal%20Marks%20Edit)_UserManual_Jan2021.docx">MIS-Nodal Marks Edit</a></li><li><a title="MIS-Nodal Marks Approve" class="level3" href="/MISFiles/UserManuals/DGET_NCVT_ITI(MIS-Nodal%20Marks%20Approve)_UserManual_Jan2021.docx">MIS-Nodal Marks Approve</a></li><li><a title="Examiner User Maunal" class="level3" href="/MISFiles/UserManuals/NCVT_MIS_Examiner_UserManual.docx">Examiner User Maunal</a></li><li><a title="Grievance User Maunal" class="level3" href="/MISFiles/UserManuals/Grievance(Public).docx">Grievance User Maunal</a></li>
+			</ul></li>
+		</ul></li><li><a class="popout level1" href="#" onclick="__doPostBack(&#39;ctl00$mnuMain&#39;,&#39;Dashboard&#39;)">Dashboard</a><ul class="level2">
+			<li><a title="DGT Reporting Dashboard" class="level2" href="/Pages/Dashboard/DashboardMain.aspx">DGT Reporting Dashboard</a></li><li><a title="Admitted Trainee Dashboard" class="level2" href="/Pages/Dashboard/AdmittedTraineeDashboard.aspx">Admitted Trainee Dashboard</a></li><li><a title="Instructor Dashboard" class="level2" href="/Pages/Dashboard/InstructorDashboard.aspx">Instructor Dashboard</a></li><li><a title="Annual Result Dashboard" class="level2" href="/Pages/Dashboard/AnnualResultDashboard.aspx">Annual Result Dashboard</a></li><li><a title="Semester Result Dashboard" class="level2" href="/Pages/Dashboard/SemesterResultDashboard.aspx">Semester Result Dashboard</a></li>
+		</ul></li><li><a class="popout level1" href="#" onclick="__doPostBack(&#39;ctl00$mnuMain&#39;,&#39;Complaint Tool&#39;)">Complaint Tool</a><ul class="level2">
+			<li><a title="Complaint Tool" class="level2" href="http://help.ncvtmis.gov.in/sm/ess.do">Complaint Tool</a></li><li><a title="Helpdesk" class="popout level2" href="#" onclick="__doPostBack(&#39;ctl00$mnuMain&#39;,&#39;Complaint Tool\\Helpdesk&#39;)">Helpdesk</a><ul class="level3">
+				<li><a title="DGET SOP HelpDesk" class="level3" href="/MISFiles/Helpdesk/DGET_SOP_HelpDesk%20Ticket_V3.0.docx">DGET SOP HelpDesk</a></li><li><a title="FAQs" class="level3" href="/MISFiles/Helpdesk/FAQs.docx">FAQs</a></li>
+			</ul></li><li><a class="popout level2" href="#" onclick="__doPostBack(&#39;ctl00$mnuMain&#39;,&#39;Complaint Tool\\Grievance&#39;)">Grievance</a><ul class="level3">
+				<li><a title="Page allows Authenticate Trainee Details." class="level3" href="/Pages/Trainee/traineeGrievanceAuthenticate.aspx">Log Grievance</a></li><li><a title="Page allows View Trainee Grievance Details." class="level3" href="/Pages/Trainee/ViewGrievance.aspx">Grievance View</a></li>
+			</ul></li>
+		</ul></li>
+	</ul>
+</div><a id="mnuMain_SkipLink"></a>
+        </div>
+        <div id="body">
+            
+    <h1>ITI Details -
+        <span id="cphBody_lblDisplayNameH">Government Industrial Training Institute, Kalpi Jalaun (GR09901195)</span>
+    </h1>
+    <div id="cphBody_pnlDetails" class="accordian">
+        <h2>ITI Detail</h2>
+        <div>
+            <table class="form">
+                <tr>
+                    <th style="width: 15%">ITI Name</th>
+                    <td style="width: 30%">
+                        <span id="cphBody_lblITIName">Government Industrial Training Institute, Kalpi Jalaun</span>
+                    </td>
+                    <th style="width: 15%">Display Name</th>
+                    <td style="width: 20%">
+                        <span id="cphBody_lblDisplayName">Government Industrial Training Institute, Kalpi Jalaun</span>
+                    </td>
+                    <td rowspan="9" style="vertical-align: top; width: 20%">
+                        <div class="panel">
+                            <h3>Financial Schemes for ITI</h3>
+                            <ul id="cphBody_blScheme">
+	<li>No Schemes found</li>
+</ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Institute Type</th>
+                    <td>
+                        <span id="cphBody_lblInstituteType">Government</span>
+                    </td>
+                    <th>Location</th>
+                    <td>
+                        <span id="cphBody_lblLocation">Rural</span>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <th>Website URL</th>
+                    <td>
+                        <a id="cphBody_hlnkWebUrl" href="http://www.vppup.in" target="_blank">http://www.vppup.in</a>
+                    </td>
+                    <th>Date of Establishment </th>
+                    <td>
+                        <span id="cphBody_lblEshtablishmentDate">11/10/2009</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Address</th>
+                    <td>
+                        <span id="cphBody_lblAddress">Vyas Mandir Road Kalpi</span>
+                    </td>
+                    <th>Last Data Update Date</th>
+                    <td>
+                        <span id="cphBody_lblLastUpdateDate"></span>
+                    </td>
+                 
+                </tr>
+
+                <tr>
+                    <th>District</th>
+                    <td>
+                        <span id="cphBody_lblDistrict">JALAUN</span>
+                    </td>
+                    <th>State</th>
+                    <td>
+                        <span id="cphBody_lblState">UTTAR PRADESH</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Pincode</th>
+                    <td>
+                        <span id="cphBody_lblPincode">285204</span>
+                    </td>
+                    <th>Contact Phone Number</th>
+                    <td>
+                        <span id="cphBody_lblContactNumber">9450060255</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Contact Email</th>
+                    <td>
+                        <a id="cphBody_hlnkEmail" href="mailto:giti304@vppup.in">giti304@vppup.in</a>
+                    </td>
+                    <th>SPIU Name</th>
+                    <td>
+                        <span id="cphBody_lblSPIU">Uttar Pradesh-SPIU</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Location</th>
+                    <td>
+                        <span id="cphBody_lbllatitude">Latitude: 26.0548</span>
+                        &nbsp;
+                        <span id="cphBody_lbllongitude">Longitude: 79.6168</span>
+                    </td>
+                    <th colspan="2">
+                        <span id="cphBody_lblMap" class="icon popup"></span>
+                        <a id="cphBody_hlnkMap" class="external" href="http://www.google.com/maps/place/26.0548,79.6168" target="_blank">View in Google Maps</a>
+                    </th>
+                </tr>
+                <tr>
+                    <th>Status</th>
+                    <td>
+                        <span id="cphBody_lblStatus">Active</span>
+                    </td>
+                     
+                    <th>Final Grading</th>
+
+
+                    <td>
+                        
+                    <span id="cphBody_lblFinalTE">7.80</span>
+                        </td>
+                </tr>
+                
+
+
+
+                
+
+                
+
+
+                <tr style="display: none">
+                    <!-- Amin: When enabling change rowspan of financial scheme to 11, refer first row of this table-->
+                    <th>Is Verified</th>
+                    <td>
+                        <span id="cphBody_lblrblIsverified">Yes</span>
+                    </td>
+                    <th>Verification Remarks</th>
+                    <td>
+                        <span id="cphBody_lblVRemarks"></span>
+                    </td>
+                </tr>  
+               
+            </table>
+            <table class="form">
+                <tr>
+                    <th style="width:33%; display:none">
+                        <span class="icon check"></span>
+                        <a id="cphBody_hlnkFeedback" href="/Pages/ITI/Feedback.aspx?code=GR09901195">Click here to submit ratings for ITI</a>
+                    </th>
+                    <th style="width:33%; display:none">
+                        <span class="icon check"></span>
+                        <a id="cphBody_hlnkViewFeedback" href="/Pages/ITI/ViewFeedback.aspx?code=GR09901195">Click here to view detailed ratings for ITI</a>
+                    </th>
+                    <th style="width:34%; display:none"">
+                        <span class="icon check"></span>
+                        <a id="cphBody_hlnkViewFeedbackStep" href="/Material/Grading_of_ITIs_Steps.pdf" target="_blank">Click here to view the steps of Grading process</a>
+                    </th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="accordian">
+        <h2>Principal Details</h2>
+        <div class="hidden">
+            <table class="form">
+                <tr>
+                    <th style="width: 12%">Name</th>
+                    <td style="width: 40%">
+                        <span id="cphBody_lblPName">Sanjay Kishore</span>
+                    </td>
+                    <th style="width: 12%">EmailID</th>
+                    <td>
+                        <span id="cphBody_lblPEmail">giti304@vppup.in</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="accordian">
+        <h2>Chairperson/Correspondent Details</h2>
+        <div class="hidden">
+            <table class="form">
+                <tr>
+                    <th style="width: 12%">Name</th>
+                    <td style="width: 40%">
+                        <span id="cphBody_lblCName"></span>
+                    </td>
+                    <th style="width: 12%">EmailID</th>
+                    <td>
+                        <span id="cphBody_lblCEmail"></span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="accordian">
+        <h2>COE Details</h2>
+        <div class="hidden">
+            <table class="form">
+                <tr>
+                    <th>Name of Industry</th>
+                    <td>
+                        <span id="cphBody_lblIndustryName"></span>
+                    </td>
+                    <th>Industry Association</th>
+                    <td>
+                        <span id="cphBody_lblIndustryAssociation"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Type of Industry</th>
+                    <td>
+                        <span id="cphBody_lblTypeIndustry"></span>
+                    </td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr>
+                    <th>Covered Under CSS</th>
+                    <td>
+                        <span id="cphBody_lblCoveredUnderCss">No</span>
+                    </td>
+                   
+                  
+                    <th>Project Joining Year</th>
+                    <td>
+                        <span id="cphBody_lblProjectJoiningYear"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>ITI Opted</th>
+                    <td>
+                        <span id="cphBody_lblITIOpted"></span>
+                    </td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr>
+                    <th>COE Sector</th>
+                    <td>
+                        <span id="cphBody_lblCOESector"></span>
+                    </td>
+                    <th>COE Admission Start</th>
+                    <td>
+                        <span id="cphBody_lblCOEAdmissionStart"></span>
+                    </td>
+               
+            </table>
+        </div>
+    </div>
+    <div class="accordian">
+        <h2>Trade Details</h2>
+        <div>
+            <div id="cphBody_ctl00">
+	
+                    <div>
+		<table title="30 record(s) fetched." class="grid" cellspacing="0" rules="all" border="1" id="cphBody_dgTrade" style="border-collapse:collapse;">
+			<tr class="header">
+				<th scope="col" abbr="DGT Affilaited Trade/Module Code" style="width:5%;"><a href="javascript:__doPostBack(&#39;ctl00$cphBody$dgTrade&#39;,&#39;Sort$TradeCode&#39;)">Trade Code</a></th><th scope="col" abbr="DGT Affilaited Trade/Module Name" style="width:40%;"><a href="javascript:__doPostBack(&#39;ctl00$cphBody$dgTrade&#39;,&#39;Sort$TradeModule&#39;)">Trade Name</a></th><th scope="col" abbr="DGT Affilaited Trade/Module Duration" style="width:5%;"><a href="javascript:__doPostBack(&#39;ctl00$cphBody$dgTrade&#39;,&#39;Sort$Duration&#39;)">Duration</a></th><th scope="col" abbr="Shift Id" style="width:5%;"><a href="javascript:__doPostBack(&#39;ctl00$cphBody$dgTrade&#39;,&#39;Sort$Shift&#39;)">Shift</a></th><th scope="col" abbr="Unit Id" style="width:5%;"><a href="javascript:__doPostBack(&#39;ctl00$cphBody$dgTrade&#39;,&#39;Sort$unit&#39;)">Unit</a></th><th scope="col" abbr="No. of Seats for Trade/Module" style="width:10%;"><a href="javascript:__doPostBack(&#39;ctl00$cphBody$dgTrade&#39;,&#39;Sort$SeatCount&#39;)">Seats Count</a></th><th scope="col" abbr="Admitted Trainee in Trade/Module for first semester of current session" style="width:10%;"><a href="javascript:__doPostBack(&#39;ctl00$cphBody$dgTrade&#39;,&#39;Sort$TraineeCountC&#39;)">Seats Filled (Current Session)</a></th><th scope="col" abbr="Admitted Trainee in Trade/Module for first semester of Previous session" style="width:10%;"><a href="javascript:__doPostBack(&#39;ctl00$cphBody$dgTrade&#39;,&#39;Sort$TraineeCountP&#39;)">Seats Filled (Previous Session)</a></th><th scope="col" abbr="Available seats in Trade/Module for first semester of current session" style="width:10%;"><a href="javascript:__doPostBack(&#39;ctl00$cphBody$dgTrade&#39;,&#39;Sort$AvailableSeats&#39;)">Vacant Seats</a></th><th scope="col" abbr="Status" style="width:10%;"><a href="javascript:__doPostBack(&#39;ctl00$cphBody$dgTrade&#39;,&#39;Sort$Status&#39;)">Status</a></th><th scope="col" abbr="Modified Date" style="width:10%;"><a href="javascript:__doPostBack(&#39;ctl00$cphBody$dgTrade&#39;,&#39;Sort$ModifiedDate&#39;)">ModifiedDate</a></th>
+			</tr><tr class="row">
+				<td>0421</td><td>Computer Operator and Programming Assistant (NSQF)</td><td>1 year</td><td>1</td><td>1</td><td>24</td><td>0</td><td>0</td><td>24</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="alt_row">
+				<td>0421</td><td>Computer Operator and Programming Assistant (NSQF)</td><td>1 year</td><td>2</td><td>1</td><td>24</td><td>0</td><td>0</td><td>24</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="row">
+				<td>0409</td><td>Cosmetology (NSQF)</td><td>1 year</td><td>1</td><td>1</td><td>24</td><td>0</td><td>0</td><td>24</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="alt_row">
+				<td>0409</td><td>Cosmetology (NSQF)</td><td>1 year</td><td>2</td><td>1</td><td>24</td><td>0</td><td>0</td><td>24</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="row">
+				<td>0991</td><td>Draughtsman (Civil) (NSQF)</td><td>2 year</td><td>1</td><td>1</td><td>24</td><td>0</td><td>0</td><td>24</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="alt_row">
+				<td>0991</td><td>Draughtsman (Civil) (NSQF)</td><td>2 year</td><td>2</td><td>1</td><td>24</td><td>0</td><td>0</td><td>24</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="row">
+				<td>0440</td><td>Dress Making (NSQF)</td><td>1 year</td><td>1</td><td>1</td><td>20</td><td>0</td><td>0</td><td>20</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="alt_row">
+				<td>0440</td><td>Dress Making (NSQF)</td><td>1 year</td><td>2</td><td>1</td><td>20</td><td>0</td><td>0</td><td>20</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="row">
+				<td>0442</td><td>Electrician (NSQF)</td><td>2 year</td><td>1</td><td>1</td><td>20</td><td>0</td><td>0</td><td>20</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="alt_row">
+				<td>0442</td><td>Electrician (NSQF)</td><td>2 year</td><td>2</td><td>1</td><td>20</td><td>0</td><td>0</td><td>20</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="row">
+				<td>0449</td><td>Fashion Design &amp; Technology (NSQF)</td><td>1 year</td><td>1</td><td>1</td><td>20</td><td>0</td><td>0</td><td>20</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="alt_row">
+				<td>0449</td><td>Fashion Design &amp; Technology (NSQF)</td><td>1 year</td><td>2</td><td>1</td><td>20</td><td>0</td><td>0</td><td>20</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="row">
+				<td>0453</td><td>Fitter (NSQF)</td><td>2 year</td><td>1</td><td>1</td><td>20</td><td>0</td><td>0</td><td>20</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="alt_row">
+				<td>0453</td><td>Fitter (NSQF)</td><td>2 year</td><td>2</td><td>1</td><td>20</td><td>0</td><td>0</td><td>20</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="row">
+				<td>0474</td><td>Information Communication Technology System Maintenance (NSQF)</td><td>2 year</td><td>1</td><td>1</td><td>24</td><td>0</td><td>0</td><td>24</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="alt_row">
+				<td>0474</td><td>Information Communication Technology System Maintenance (NSQF)</td><td>2 year</td><td>2</td><td>1</td><td>24</td><td>0</td><td>0</td><td>24</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="row">
+				<td>0493</td><td>Machinist (NSQF)</td><td>2 year</td><td>1</td><td>1</td><td>20</td><td>0</td><td>0</td><td>20</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="alt_row">
+				<td>0493</td><td>Machinist (NSQF)</td><td>2 year</td><td>2</td><td>1</td><td>20</td><td>0</td><td>0</td><td>20</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="row">
+				<td>0503</td><td>Mechanic (Refrigeration and Air-Conditioning) (NSQF)</td><td>2 year</td><td>1</td><td>1</td><td>24</td><td>0</td><td>0</td><td>24</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="alt_row">
+				<td>0503</td><td>Mechanic (Refrigeration and Air-Conditioning) (NSQF)</td><td>2 year</td><td>2</td><td>1</td><td>24</td><td>0</td><td>0</td><td>24</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="row">
+				<td>0522</td><td>Mechanic Motor Cycle (NSQF)</td><td>1 year</td><td>1</td><td>1</td><td>20</td><td>0</td><td>0</td><td>20</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="alt_row">
+				<td>0522</td><td>Mechanic Motor Cycle (NSQF)</td><td>1 year</td><td>2</td><td>1</td><td>20</td><td>0</td><td>0</td><td>20</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="row">
+				<td>0985</td><td>Mechanic Two &amp; Three Wheeler (NSQF)</td><td>1 year</td><td>1</td><td>1</td><td>20</td><td>0</td><td>0</td><td>20</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="alt_row">
+				<td>0985</td><td>Mechanic Two &amp; Three Wheeler (NSQF)</td><td>1 year</td><td>2</td><td>1</td><td>20</td><td>0</td><td>0</td><td>20</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="row">
+				<td>0998</td><td>REFRIGERATION AND AIR CONDITIONING TECHNICIAN(NSQF)</td><td>2 year</td><td>1</td><td>1</td><td>24</td><td>0</td><td>0</td><td>24</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="alt_row">
+				<td>0998</td><td>REFRIGERATION AND AIR CONDITIONING TECHNICIAN(NSQF)</td><td>2 year</td><td>2</td><td>1</td><td>24</td><td>0</td><td>0</td><td>24</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="row">
+				<td>0578</td><td>Turner (NSQF)</td><td>2 year</td><td>1</td><td>1</td><td>20</td><td>0</td><td>0</td><td>20</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="alt_row">
+				<td>0578</td><td>Turner (NSQF)</td><td>2 year</td><td>2</td><td>1</td><td>20</td><td>0</td><td>0</td><td>20</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="row">
+				<td>0969</td><td>Welder (NSQF)</td><td>1 year</td><td>1</td><td>1</td><td>20</td><td>0</td><td>0</td><td>20</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="alt_row">
+				<td>0969</td><td>Welder (NSQF)</td><td>1 year</td><td>2</td><td>1</td><td>20</td><td>0</td><td>0</td><td>20</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr>
+		</table>
+	</div>
+                
+</div>
+        </div>
+    </div>
+    <div class="accordian">
+        <h2>Affiliation Details</h2>
+        <div>
+            <div id="cphBody_ctl01">
+	
+                    <div>
+		<table title="56 record(s) fetched." class="grid" cellspacing="0" rules="all" border="1" id="cphBody_dgAffiliation" style="border-collapse:collapse;">
+			<tr class="header">
+				<th class="hidden" scope="col"><a href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation&#39;,&#39;Sort$Id&#39;)">pkTradeID</a></th><th scope="col" abbr="Date on which DGT affiliation was granted" style="width:10%;"><a href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation&#39;,&#39;Sort$GrantDate&#39;)">Grant Date</a></th><th scope="col" abbr="DGT Affiliated Scheme" style="width:10%;"><a href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation&#39;,&#39;Sort$Scheme&#39;)">Scheme</a></th><th scope="col" abbr="DGT Affiliated Trade/Module Name" style="width:30%;"><a href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation&#39;,&#39;Sort$TradeModule&#39;)">Trade Name</a></th><th scope="col" abbr="Click here to see trainee list" style="width:5%;">Shifts</th><th scope="col" abbr="No. of Units affiliated for Trade/Module" style="width:5%;"><a href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation&#39;,&#39;Sort$Units&#39;)">No. of Units</a></th><th scope="col" abbr="DGET File Reference Number" style="width:15%;"><a href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation&#39;,&#39;Sort$AffiliationGrantNumber&#39;)">File Ref. #</a></th><th scope="col" abbr="Status" style="width:10%;"><a href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation&#39;,&#39;Sort$Status&#39;)">Status</a></th><th scope="col" abbr="ModifiedDate" style="width:10px;"><a href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation&#39;,&#39;Sort$ModifiedDate&#39;)">ModifiedDate</a></th>
+			</tr><tr class="row">
+				<td class="hidden">110</td><td>8/10/2018</td><td>CTS</td><td>Basic Cosmetology</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_0" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl02$lblNoUnits&#39;,&#39;&#39;)">Shift 1</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Deaffiliated</td><td>17 Sep 2021</td>
+			</tr><tr class="alt_row">
+				<td class="hidden">110</td><td>8/10/2018</td><td>CTS</td><td>Basic Cosmetology</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_1" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl03$lblNoUnits&#39;,&#39;&#39;)">Shift 2</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Deaffiliated</td><td>17 Sep 2021</td>
+			</tr><tr class="row">
+				<td class="hidden">96</td><td>8/10/2018</td><td>CTS</td><td>Computer Operator and Programming Assistant</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_2" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl04$lblNoUnits&#39;,&#39;&#39;)">Shift 2</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Deaffiliated</td><td>17 Sep 2021</td>
+			</tr><tr class="alt_row">
+				<td class="hidden">96</td><td>8/10/2018</td><td>CTS</td><td>Computer Operator and Programming Assistant</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_3" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl05$lblNoUnits&#39;,&#39;&#39;)">Shift 1</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Deaffiliated</td><td>17 Sep 2021</td>
+			</tr><tr class="row">
+				<td class="hidden">393</td><td>8/10/2018</td><td>&nbsp;</td><td>Computer Operator and Programming Assistant (NSQF)</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_4" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl06$lblNoUnits&#39;,&#39;&#39;)">Shift 1</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="alt_row">
+				<td class="hidden">393</td><td>8/10/2018</td><td>&nbsp;</td><td>Computer Operator and Programming Assistant (NSQF)</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_5" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl07$lblNoUnits&#39;,&#39;&#39;)">Shift 2</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="row">
+				<td class="hidden">381</td><td>8/10/2018</td><td>&nbsp;</td><td>Cosmetology (NSQF)</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_6" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl08$lblNoUnits&#39;,&#39;&#39;)">Shift 2</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="alt_row">
+				<td class="hidden">381</td><td>8/10/2018</td><td>&nbsp;</td><td>Cosmetology (NSQF)</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_7" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl09$lblNoUnits&#39;,&#39;&#39;)">Shift 1</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="row">
+				<td class="hidden">31</td><td>8/10/2018</td><td>CTS</td><td>Draughtsman (Civil)</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_8" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl10$lblNoUnits&#39;,&#39;&#39;)">Shift 2</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Deaffiliated</td><td>17 Sep 2021</td>
+			</tr><tr class="alt_row">
+				<td class="hidden">31</td><td>8/10/2018</td><td>CTS</td><td>Draughtsman (Civil)</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_9" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl11$lblNoUnits&#39;,&#39;&#39;)">Shift 1</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Deaffiliated</td><td>17 Sep 2021</td>
+			</tr><tr class="row">
+				<td class="hidden">566</td><td>8/10/2018</td><td>&nbsp;</td><td>Draughtsman (Civil) (NSQF)</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_10" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl12$lblNoUnits&#39;,&#39;&#39;)">Shift 1</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="alt_row">
+				<td class="hidden">566</td><td>8/10/2018</td><td>&nbsp;</td><td>Draughtsman (Civil) (NSQF)</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_11" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl13$lblNoUnits&#39;,&#39;&#39;)">Shift 2</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="row">
+				<td class="hidden">103</td><td>8/10/2018</td><td>CTS</td><td>Dress Making</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_12" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl14$lblNoUnits&#39;,&#39;&#39;)">Shift 2</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Deaffiliated</td><td>17 Sep 2021</td>
+			</tr><tr class="alt_row">
+				<td class="hidden">103</td><td>8/10/2018</td><td>CTS</td><td>Dress Making</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_13" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl15$lblNoUnits&#39;,&#39;&#39;)">Shift 1</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Deaffiliated</td><td>17 Sep 2021</td>
+			</tr><tr class="row">
+				<td class="hidden">411</td><td>8/10/2018</td><td>&nbsp;</td><td>Dress Making (NSQF)</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_14" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl16$lblNoUnits&#39;,&#39;&#39;)">Shift 1</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="alt_row">
+				<td class="hidden">411</td><td>8/10/2018</td><td>&nbsp;</td><td>Dress Making (NSQF)</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_15" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl17$lblNoUnits&#39;,&#39;&#39;)">Shift 2</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="row">
+				<td class="hidden">33</td><td>8/10/2018</td><td>CTS</td><td>Electrician</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_16" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl18$lblNoUnits&#39;,&#39;&#39;)">Shift 2</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Deaffiliated</td><td>17 Sep 2021</td>
+			</tr><tr class="alt_row">
+				<td class="hidden">33</td><td>8/10/2018</td><td>CTS</td><td>Electrician</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_17" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl19$lblNoUnits&#39;,&#39;&#39;)">Shift 1</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Deaffiliated</td><td>17 Sep 2021</td>
+			</tr><tr class="row">
+				<td class="hidden">413</td><td>8/10/2018</td><td>&nbsp;</td><td>Electrician (NSQF)</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_18" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl20$lblNoUnits&#39;,&#39;&#39;)">Shift 1</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="alt_row">
+				<td class="hidden">413</td><td>8/10/2018</td><td>&nbsp;</td><td>Electrician (NSQF)</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_19" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl21$lblNoUnits&#39;,&#39;&#39;)">Shift 2</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="row">
+				<td class="hidden">105</td><td>8/10/2018</td><td>CTS</td><td>Fashion Design &amp; Technology</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_20" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl22$lblNoUnits&#39;,&#39;&#39;)">Shift 2</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Deaffiliated</td><td>17 Sep 2021</td>
+			</tr><tr class="alt_row">
+				<td class="hidden">105</td><td>8/10/2018</td><td>CTS</td><td>Fashion Design &amp; Technology</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_21" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl23$lblNoUnits&#39;,&#39;&#39;)">Shift 1</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Deaffiliated</td><td>17 Sep 2021</td>
+			</tr><tr class="row">
+				<td class="hidden">420</td><td>8/10/2018</td><td>&nbsp;</td><td>Fashion Design &amp; Technology (NSQF)</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_22" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl24$lblNoUnits&#39;,&#39;&#39;)">Shift 1</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="alt_row">
+				<td class="hidden">420</td><td>8/10/2018</td><td>&nbsp;</td><td>Fashion Design &amp; Technology (NSQF)</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_23" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl25$lblNoUnits&#39;,&#39;&#39;)">Shift 2</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="row">
+				<td class="hidden">36</td><td>8/10/2018</td><td>CTS</td><td>Fitter</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_24" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl26$lblNoUnits&#39;,&#39;&#39;)">Shift 1</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Deaffiliated</td><td>17 Sep 2021</td>
+			</tr><tr class="alt_row">
+				<td class="hidden">36</td><td>8/10/2018</td><td>CTS</td><td>Fitter</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_25" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl27$lblNoUnits&#39;,&#39;&#39;)">Shift 2</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Deaffiliated</td><td>17 Sep 2021</td>
+			</tr><tr class="row">
+				<td class="hidden">424</td><td>8/10/2018</td><td>&nbsp;</td><td>Fitter (NSQF)</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_26" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl28$lblNoUnits&#39;,&#39;&#39;)">Shift 1</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="alt_row">
+				<td class="hidden">424</td><td>8/10/2018</td><td>&nbsp;</td><td>Fitter (NSQF)</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_27" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl29$lblNoUnits&#39;,&#39;&#39;)">Shift 2</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="row">
+				<td class="hidden">39</td><td>8/10/2018</td><td>CTS</td><td>Information Communication Technology System Maintenance</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_28" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl30$lblNoUnits&#39;,&#39;&#39;)">Shift 1</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Deaffiliated</td><td>17 Sep 2021</td>
+			</tr><tr class="alt_row">
+				<td class="hidden">39</td><td>8/10/2018</td><td>CTS</td><td>Information Communication Technology System Maintenance</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_29" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl31$lblNoUnits&#39;,&#39;&#39;)">Shift 2</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Deaffiliated</td><td>17 Sep 2021</td>
+			</tr><tr class="row">
+				<td class="hidden">444</td><td>8/10/2018</td><td>&nbsp;</td><td>Information Communication Technology System Maintenance (NSQF)</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_30" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl32$lblNoUnits&#39;,&#39;&#39;)">Shift 1</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="alt_row">
+				<td class="hidden">444</td><td>8/10/2018</td><td>&nbsp;</td><td>Information Communication Technology System Maintenance (NSQF)</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_31" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl33$lblNoUnits&#39;,&#39;&#39;)">Shift 2</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="row">
+				<td class="hidden">42</td><td>8/10/2018</td><td>CTS</td><td>Machinist</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_32" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl34$lblNoUnits&#39;,&#39;&#39;)">Shift 2</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Deaffiliated</td><td>17 Sep 2021</td>
+			</tr><tr class="alt_row">
+				<td class="hidden">42</td><td>8/10/2018</td><td>CTS</td><td>Machinist</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_33" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl35$lblNoUnits&#39;,&#39;&#39;)">Shift 1</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Deaffiliated</td><td>17 Sep 2021</td>
+			</tr><tr class="row">
+				<td class="hidden">460</td><td>8/10/2018</td><td>&nbsp;</td><td>Machinist (NSQF)</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_34" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl36$lblNoUnits&#39;,&#39;&#39;)">Shift 1</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="alt_row">
+				<td class="hidden">460</td><td>8/10/2018</td><td>&nbsp;</td><td>Machinist (NSQF)</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_35" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl37$lblNoUnits&#39;,&#39;&#39;)">Shift 2</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="row">
+				<td class="hidden">56</td><td>8/10/2018</td><td>CTS</td><td>Mechanic (Refrigeration and Air-Conditioning)</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_36" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl38$lblNoUnits&#39;,&#39;&#39;)">Shift 2</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Deaffiliated</td><td>17 Sep 2021</td>
+			</tr><tr class="alt_row">
+				<td class="hidden">56</td><td>8/10/2018</td><td>CTS</td><td>Mechanic (Refrigeration and Air-Conditioning)</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_37" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl39$lblNoUnits&#39;,&#39;&#39;)">Shift 1</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Deaffiliated</td><td>17 Sep 2021</td>
+			</tr><tr class="row">
+				<td class="hidden">470</td><td>8/10/2018</td><td>&nbsp;</td><td>Mechanic (Refrigeration and Air-Conditioning) (NSQF)</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_38" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl40$lblNoUnits&#39;,&#39;&#39;)">Shift 1</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Deaffiliated</td><td>17 Sep 2021</td>
+			</tr><tr class="alt_row">
+				<td class="hidden">470</td><td>8/10/2018</td><td>&nbsp;</td><td>Mechanic (Refrigeration and Air-Conditioning) (NSQF)</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_39" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl41$lblNoUnits&#39;,&#39;&#39;)">Shift 2</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Deaffiliated</td><td>17 Sep 2021</td>
+			</tr><tr class="row">
+				<td class="hidden">3</td><td>8/10/2018</td><td>CTS</td><td>Mechanic Motor Cycle</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_40" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl42$lblNoUnits&#39;,&#39;&#39;)">Shift 2</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Deaffiliated</td><td>17 Sep 2021</td>
+			</tr><tr class="alt_row">
+				<td class="hidden">3</td><td>8/10/2018</td><td>CTS</td><td>Mechanic Motor Cycle</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_41" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl43$lblNoUnits&#39;,&#39;&#39;)">Shift 1</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Deaffiliated</td><td>17 Sep 2021</td>
+			</tr><tr class="row">
+				<td class="hidden">489</td><td>8/10/2018</td><td>&nbsp;</td><td>Mechanic Motor Cycle (NSQF)</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_42" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl44$lblNoUnits&#39;,&#39;&#39;)">Shift 1</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Deaffiliated</td><td>17 Sep 2021</td>
+			</tr><tr class="alt_row">
+				<td class="hidden">489</td><td>8/10/2018</td><td>&nbsp;</td><td>Mechanic Motor Cycle (NSQF)</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_43" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl45$lblNoUnits&#39;,&#39;&#39;)">Shift 2</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Deaffiliated</td><td>17 Sep 2021</td>
+			</tr><tr class="row">
+				<td class="hidden">560</td><td>8/10/2018</td><td>&nbsp;</td><td>Mechanic Two &amp; Three Wheeler (NSQF)</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_44" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl46$lblNoUnits&#39;,&#39;&#39;)">Shift 2</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Deaffiliated</td><td>10 Feb 2025</td>
+			</tr><tr class="alt_row">
+				<td class="hidden">560</td><td>8/10/2018</td><td>&nbsp;</td><td>Mechanic Two &amp; Three Wheeler (NSQF)</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_45" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl47$lblNoUnits&#39;,&#39;&#39;)">Shift 1</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="row">
+				<td class="hidden">575</td><td>8/10/2018</td><td>&nbsp;</td><td>REFRIGERATION AND AIR CONDITIONING TECHNICIAN(NSQF)</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_46" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl48$lblNoUnits&#39;,&#39;&#39;)">Shift 1</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="alt_row">
+				<td class="hidden">575</td><td>8/10/2018</td><td>&nbsp;</td><td>REFRIGERATION AND AIR CONDITIONING TECHNICIAN(NSQF)</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_47" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl49$lblNoUnits&#39;,&#39;&#39;)">Shift 2</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="row">
+				<td class="hidden">67</td><td>8/10/2018</td><td>CTS</td><td>Turner</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_48" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl50$lblNoUnits&#39;,&#39;&#39;)">Shift 2</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Deaffiliated</td><td>17 Sep 2021</td>
+			</tr><tr class="alt_row">
+				<td class="hidden">67</td><td>8/10/2018</td><td>CTS</td><td>Turner</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_49" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl51$lblNoUnits&#39;,&#39;&#39;)">Shift 1</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Deaffiliated</td><td>17 Sep 2021</td>
+			</tr><tr class="row">
+				<td class="hidden">545</td><td>8/10/2018</td><td>&nbsp;</td><td>Turner (NSQF)</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_50" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl52$lblNoUnits&#39;,&#39;&#39;)">Shift 1</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="alt_row">
+				<td class="hidden">545</td><td>8/10/2018</td><td>&nbsp;</td><td>Turner (NSQF)</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_51" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl53$lblNoUnits&#39;,&#39;&#39;)">Shift 2</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="row">
+				<td class="hidden">29</td><td>8/10/2018</td><td>CTS</td><td>Welder</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_52" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl54$lblNoUnits&#39;,&#39;&#39;)">Shift 1</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Deaffiliated</td><td>17 Sep 2021</td>
+			</tr><tr class="alt_row">
+				<td class="hidden">29</td><td>8/10/2018</td><td>CTS</td><td>Welder</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_53" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl55$lblNoUnits&#39;,&#39;&#39;)">Shift 2</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Deaffiliated</td><td>17 Sep 2021</td>
+			</tr><tr class="row">
+				<td class="hidden">356</td><td>8/10/2018</td><td>&nbsp;</td><td>Welder (NSQF)</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_54" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl56$lblNoUnits&#39;,&#39;&#39;)">Shift 1</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr><tr class="alt_row">
+				<td class="hidden">356</td><td>8/10/2018</td><td>&nbsp;</td><td>Welder (NSQF)</td><td>
+                                        <a id="cphBody_dgAffiliation_lblNoUnits_55" href="javascript:__doPostBack(&#39;ctl00$cphBody$dgAffiliation$ctl57$lblNoUnits&#39;,&#39;&#39;)">Shift 2</a>
+                                    </td><td>1</td><td>DGT-12/1/2018-TC</td><td>Affiliated</td><td>&nbsp;</td>
+			</tr>
+		</table>
+	</div>
+                
+</div>
+        </div>
+    </div>
+    <table class="form">
+        <tr>
+            <td colspan="4" class="center">
+                <input type="submit" name="ctl00$cphBody$btnBack" value="Back" onclick="javascript:window.history.back();" id="cphBody_btnBack" title="Click to go back to Orginal Search page" />
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript">
+        var btnBack = "#cphBody_btnBack";
+        $(document).ready(function () {
+            if (window.history.length <= 1) {
+                $(btnBack).val("Close");
+                $(btnBack).click(function () { window.close(); });
+            }
+        });
+
+
+        function ShowTraineePopup(ITIID, TradeID, Shift , ITI_Code) {
+            debugger;
+            var properties = "height=500,width=800,left=100px,top=100px,location=no,menubar=no,resizable=0,scrollbars=yes,status=no,titlebar=no";
+            var url = "/Pages/ITI/TraineeList.aspx" + "?iti=" + ITIID.toString() + "&TradeID=" + TradeID + "&Shifts=" + Shift + "&Code=" + ITI_Code;
+            OpenPopup(url, properties);
+             return false;
+         }
+    </script>
+
+        </div>
+        <table class="frame">
+            <tr>
+                <td>
+                    
+                </td>
+            </tr>
+        </table>
+        <div id="footer">
+            <table class="frame">
+
+                <tr>
+                    <th style="width: auto; padding-left: 10px">© 2015 Ministry of Skill Development And Entrepreneurship, Government of India.</th>
+                    <td style="padding-right: 5px; text-align: right">
+                        <span id="tooltip"></span>
+                    </td>
+                </tr>
+            </table>
+            <table class="frame">
+                <tr>
+                   
+                    <td style="width: auto; padding-left: 10px"> Suggested browser Microsoft Edge, Chrome or Safari only.</td>
+                  
+                    <td style="padding-right: 5px; text-align: right">
+                        <span id="lblHits">Total Hits : 5,833,860 | Yearly Hits : 4,022,778 | Monthly Hits : 118,515</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="banner" class="warn" onclick="HideBanner();" title="Click/Press Esc to close">
+        </div>
+        <div id="overlay_bg">
+        </div>
+        <div id="confirm" class="round-corner unselectable hidden">
+            <table class="frame">
+                <tr>
+                    <td style="height: 40px; vertical-align: top; text-align: center">
+                        <h4></h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center">
+                        <input id="btnYes" type="button" class="button" value="Yes" />
+                        <input id="btnNo" type="button" class="button" value="No" onclick="return HideConfirm();" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="overlay" class="round-corner">
+            <table>
+                <tr>
+                    <td style="text-align: right">
+                        <a href="#" class="close" onclick="HideOverlay(); return false;">x</a>
+                        <div id="overlay-content" style="text-align: left">
+                            
+<div id="contentOverlay_ctl00">
+	
+            <div class="panel">
+                <h2>
+                    <span id="contentOverlay_lblheading"></span>
+                </h2>
+
+                <table class="form">
+                    
+                         <tr id="contentOverlay_trGradingPanel">
+		<th colspan="4">
+                            <div id="contentOverlay_ucSelfGrading_pnlRating" class="rating shadow readonly">
+			
+    <table>
+        <tr>
+            <td style="padding-left: 5%">
+                <input type="hidden" name="ctl00$contentOverlay$ucSelfGrading$hdnRating" id="contentOverlay_ucSelfGrading_hdnRating" value="0" />
+                <input type="hidden" name="ctl00$contentOverlay$ucSelfGrading$hdnStarsAllowed" id="contentOverlay_ucSelfGrading_hdnStarsAllowed" value="0" />
+                <input type="hidden" name="ctl00$contentOverlay$ucSelfGrading$hdnWeightage" id="contentOverlay_ucSelfGrading_hdnWeightage" value="0" />
+            </td>
+            <td style="width: 10%">
+                <span id="contentOverlay_ucSelfGrading_lblDisplayOrder" class="text" style="font-weight:bold;"></span>
+                Parameter:
+            </td> 
+            <td style="width: 85%" colspan="3" >
+                <span id="contentOverlay_ucSelfGrading_lblDescription" class="text">Self Grading of ITI</span>
+                <a id="contentOverlay_ucSelfGrading_ahelp">
+                    <span class="icon help"></span>
+                </a>
+            </td>
+          
+        </tr>
+        
+        <tr>
+            <td></td>
+            <th id="contentOverlay_ucSelfGrading_thStar" style="width:10%">Select Star:</th>
+			
+                <td id="contentOverlay_ucSelfGrading_trRate" style="text-align: left; width: 50%"><span class="blocked unrated">1</span><span class="blocked unrated">2</span><span class="blocked unrated">3</span><span class="blocked unrated">4</span><span class="blocked unrated">5</span><span class="blocked unrated">6</span><span class="blocked unrated">7</span><span class="blocked unrated">8</span><span class="blocked unrated">9</span><span class="blocked unrated">10</span></td>
+			
+            <td style="padding-left: 5%" ></td>
+          <td></td>
+        </tr>
+        
+    </table>
+
+		</div>
+
+                        </th>
+	</tr>
+	
+                 
+                </table>
+            </div>
+        
+</div> 
+
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        
+        
+        
+    
+
+<script type="text/javascript">
+//<![CDATA[
+OnEachCallBack();ResetScrollPosition();//]]>
+</script>
+<script type='text/javascript'>new Sys.WebForms.Menu({ element: 'mnuMain', disappearAfter: 1000, orientation: 'horizontal', tabIndex: 0, disabled: false });</script>
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.add_init(function() {
+    $create(Sys.UI._UpdateProgress, {"associatedUpdatePanelId":null,"displayAfter":500,"dynamicLayout":true}, null, null, $get("upLoading"));
+});
+//]]>
+</script>
+</form>
+    <script type="text/javascript">
+    document.onkeypress = function (event) {
+
+        event = (event || window.event);
+
+        if (event.keyCode == 123) {
+
+            return false;
+
+        }
+
+    }
+
+    document.onmousedown = function (event) {
+
+        event = (event || window.event);
+
+        if (event.keyCode == 123) {
+
+            return false;
+
+        }
+
+    }
+
+    document.onkeydown = function (event) {
+
+        event = (event || window.event);
+
+        if (event.keyCode == 123) {
+
+            return false;
+
+        }
+
+    }
+
+    window.oncontextmenu = function () {
+
+        return false;
+
+    }
+
+    $(document).keydown(function (event) {
+
+        if (event.keyCode == 123) {
+
+            return false;
+
+        }
+
+        else if ((event.ctrlKey && event.shiftKey && event.keyCode == 73) || (event.ctrlKey && event.shiftKey && event.keyCode == 74)
+
+            || (event.ctrlKey && event.shiftKey && event.keyCode == 67)) {
+
+            return false;
+
+        }
+
+    });
+    </script>
+</body>
+<script type="text/javascript">
+    $("body").fadeIn(500);
+</script>
+</html>

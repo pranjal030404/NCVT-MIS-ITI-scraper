@@ -91,13 +91,22 @@ def parse_detail(html, iti_id):
     soup = BeautifulSoup(html, "lxml")
     data = {"iti_id": iti_id, "trades": []}
 
-    for row in soup.select("table tr"):
-        cells = row.find_all("td")
-        if len(cells) == 2:
-            label = cells[0].get_text(strip=True)
-            value = cells[1].get_text(strip=True)
-            if label:
-                _add_main(data, label, value)
+    for row in soup.select("table.form tr"):
+        cells = row.find_all(["th", "td"])
+        # Fields render as alternating <th>Label</th><td>Value</td> pairs,
+        # possibly several per row, plus an occasional unpaired trailing
+        # <td> (e.g. a rowspan'd side panel) which we simply ignore.
+        i = 0
+        while i + 1 < len(cells):
+            th, td = cells[i], cells[i + 1]
+            if th.name == "th" and td.name == "td":
+                label = th.get_text(strip=True)
+                value = td.get_text(strip=True)
+                if label:
+                    _add_main(data, label, value)
+                i += 2
+            else:
+                i += 1
 
     for table in soup.find_all("table"):
         data["trades"].extend(_parse_trade_table(table))
